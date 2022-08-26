@@ -1,7 +1,7 @@
 package application;
 
 import java.util.Locale;
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.ArrayList;
 import java.util.List;

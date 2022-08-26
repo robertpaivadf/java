@@ -6,7 +6,7 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		//Locale.setDefault(Locale.US);
+		Locale.setDefault(Locale.US);
 		
 		BigDecimal i = new BigDecimal(3757887.876876898);
 				
