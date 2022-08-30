@@ -15,7 +15,6 @@ INDEX VERSION 1.131+C:\Users\Robert P Pereira\projetos\java\ws-eclipse\.metadata
 3375317732.index
 2160078604.index
 2976844226.index
-2568778839.index
 2879481095.index
 1133288397.index
 2129123373.index

@@ -1,7 +1,8 @@
 package entities;
 
-public class SavingsAccount extends Account{
-
+public final class SavingsAccount extends Account{
+//usando final essa classe não poderá ser herdada por outra classe
+	
 	private Double interestRate;
 
 	public SavingsAccount() {
