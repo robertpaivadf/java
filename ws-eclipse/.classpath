@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17"/>
+	<classpathentry kind="src" path="aula26_scanner/src"/>
+	<classpathentry kind="src" path="construtores/src"/>
+	<classpathentry kind="src" path="controle_estoque/src"/>
+	<classpathentry kind="src" path="curso_programacao/src"/>
+	<classpathentry kind="src" path="data_e_hora/src"/>
+	<classpathentry kind="src" path="encapsulamento/src"/>
+	<classpathentry kind="src" path="estruturas_repetitivas/src"/>
+	<classpathentry kind="src" path="esturas_condicionais/src"/>
+	<classpathentry kind="src" path="funcoes_matematicas/src"/>
+	<classpathentry kind="src" path="listas/src"/>
+	<classpathentry kind="src" path="matrizes/src"/>
+	<classpathentry kind="src" path="membros_estaticos/src"/>
+	<classpathentry kind="src" path="testes/src"/>
+	<classpathentry kind="src" path="vetores/src"/>
+	<classpathentry kind="src" path="vetores2/src"/>
+	<classpathentry kind="src" path="vetores3/src"/>
+	<classpathentry kind="output" path="aula26_scanner/bin"/>
+</classpath>
