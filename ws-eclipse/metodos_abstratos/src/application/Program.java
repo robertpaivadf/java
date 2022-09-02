@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import javax.tools.DocumentationTool.Location;
-
 import entities.Circle;
 import entities.Rectangle;
 import entities.Shape;
@@ -46,10 +44,14 @@ public class Program {
 		//print the result here
 		System.out.println("Shape Areas:");
 		for(Shape shape: list) {
-			System.out.println(shape.getColor().toString() + " - " + shape.area());			
+								
+			//Usando instanceof para descobrir qual é a classe do objeto
+			//operador ternário para fazer o if
+			String type = (shape instanceof Circle ? "Circle" : "Rectangle");
+			
+			System.out.println(type + " - " + shape.getColor().toString() + " - " + shape.area());			
 		}
-		
-		
+				
 		sc.close();
 	}
 

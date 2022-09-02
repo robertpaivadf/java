@@ -25,4 +25,5 @@
     <fullyQualifiedTypeName name="entities.SavingsAccount"/>
     <fullyQualifiedTypeName name="entities.BusinessAccount"/>
     <fullyQualifiedTypeName name="entities.Account"/>
+    <fullyQualifiedTypeName name="entities.Circle"/>
 </qualifiedTypeNameHistroy>
