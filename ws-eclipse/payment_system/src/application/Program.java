@@ -9,6 +9,7 @@ import java.util.Scanner;
 import model.entities.Contract;
 import model.entities.Installments;
 import model.services.PayPal;
+import model.services.PaymentService;
 
 public class Program {
 
@@ -28,8 +29,14 @@ public class Program {
 		System.out.print("Enter number of stallments: ");
 		int iStallments = sc.nextInt();
 		
-		Contract contract = new Contract(number, date, value, iStallments, new PayPal());
+		//inicia um novo contrato
+		Contract contract = new Contract(number, date, value);
 
+		//processa parcelas
+		new PaymentService().generateInstalment(contract, iStallments, new PayPal());	 
+		
+		
+		
 		System.out.println();
 		System.out.println("Catract data:");
 		System.out.println(contract);

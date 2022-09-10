@@ -19,7 +19,7 @@ public class Installments {
 
 	@Override
 	public String toString() {
-		return "Installments [date=" + sdf.format(date) + ", value=" + value + ", installment=" + installment + "]";
+		return "Installments [date=" + sdf.format(date) + ", value=" + String.format("%.2f", value) + ", installment=" + installment + "]";
 	}
 	
 

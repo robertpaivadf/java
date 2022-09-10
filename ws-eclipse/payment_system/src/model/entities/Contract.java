@@ -13,25 +13,15 @@ public class Contract {
 	
 	private Integer number;
 	private Date date;
-	private Double value;
-	private Integer iStallments;	
-	private List<Installments> installments;
-	private PaymentFee paymentFee;
-	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-
+	private Double value;		
+	private List<Installments> installments = new ArrayList<>(); ;
 	
-	public Contract(Integer number, Date date, Double value, Integer iStallments, PaymentFee paymentFee) throws ParseException {
+	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
+	public Contract(Integer number, Date date, Double value) throws ParseException {
 		this.number = number;
 		this.date = date;
-		this.value = value;
-		this.iStallments = iStallments;
-		installments = new ArrayList<>(); 
-		
-		//preenche a lista de parcelas
-		for(int i=1; i<=iStallments; i++) {				
-			installments.add(new PaymentService().generateInstalment(date, value, iStallments, i, paymentFee));
-		}
-		
+		this.value = value;		
 	}
 
 	private Integer getNumber() {
@@ -42,7 +32,7 @@ public class Contract {
 		this.number = number;
 	}
 
-	private Date getDate() {
+	public Date getDate() {
 		return date;
 	}
 
@@ -50,35 +40,22 @@ public class Contract {
 		this.date = date;
 	}
 
-	private Double getValue() {
+	public Double getValue() {
 		return value;
 	}
 
 	private void setValue(Double value) {
 		this.value = value;
 	}
-
-	private Integer getiStallments() {
-		return iStallments;
-	}
-
-	private void setiStallments(Integer iStallments) {
-		this.iStallments = iStallments;
-	}
-	
 	
 	public List<Installments> getInstallments() {
 		return installments;
 	}
-
-	private void setInstallments(List<Installments> installments) {
-		this.installments = installments;
-	}
+	
 
 	@Override
 	public String toString() {
-		return "Contract [number=" + number + ", date=" + sdf.format(date) + ", value=" + value + ", iStallments=" + iStallments
-				+ "]";
+		return "Contract [number=" + number + ", date=" + sdf.format(date) + ", value=" + String.format("%.2f", value) + "]";
 	}
 	
 	
