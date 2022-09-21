@@ -17,15 +17,7 @@
       <TextField fx:id="txtNumber2" layoutX="29.0" layoutY="132.0" prefHeight="25.0" prefWidth="111.0" promptText="Segundo Número" />
       <TextField fx:id="txtNumber3" layoutX="174.0" layoutY="93.0" prefHeight="25.0" prefWidth="111.0" promptText="Terceiro Número" />
       <Button fx:id="btSum" layoutX="29.0" layoutY="178.0" mnemonicParsing="false" onAction="#onBtSumAction" text="Calcular" />
-      <Label layoutX="29.0" layoutY="236.0" text="Result = ">
-         <font>
-            <Font size="14.0" />
-         </font></Label>
-      <Label fx:id="labelResult" layoutX="90.0" layoutY="236.0" text="0.00">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font></Label>
-      <Label layoutX="174.0" layoutY="135.0" text="X">
+      <Label fx:id="labelResult" layoutX="174.0" layoutY="135.0" text="X">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
